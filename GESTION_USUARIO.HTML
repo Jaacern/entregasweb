@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ccycles | Servicio Técnico</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css'>
+
+    <style>
+        .card-img-top {
+            margin-bottom: 8px;
+        }
+    </style>
+    
+    <style>
+        .navbar-nav .nav-link {
+            color: white; /* Establece el color del texto en blanco */
+        }
+
+        .navbar {
+            padding-top: 5px; /* Espacio superior para que la imagen del logo sea más grande */
+            padding-bottom: 1px; /* Espacio inferior para que la imagen del logo sea más grande */
+        }
+
+        .navbar-brand img {
+            height: 40px; /* Tamaño de la imagen del logo */
+        }
+
+        .navbar-toggler {
+            margin-top: 20px; /* Ajuste de posición para el botón del navbar-toggler */
+        }
+
+        .navbar-brand {
+            margin-left: 60px; /* Mueve la imagen del logo hacia la derecha */
+        }
+    </style>
+</head>
+    
+    
+        
+        
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Font Awesome -->
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'>
+
+   <!-- Tabler Icons -->
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css'>
+
+   <!-- Custom Styles -->
+   <style>
+       .card-img-top {
+           margin-bottom: 8px;
+       }
+
+       .navbar-nav .nav-link {
+           color: white;
+       }
+
+       .navbar {
+           padding-top: 5px;
+           padding-bottom: 1px;
+       }
+
+       .navbar-brand img {
+           height: 40px;
+       }
+
+       .navbar-toggler {
+           margin-top: 20px;
+       }
+
+       .navbar-brand {
+           margin-left: 60px;
+       }
+
+       /* Additional styles specific to admin page */
+       .admin-navbar {
+           background-color: #333;
+           color: #fff;
+           padding: 15px 0;
+       }
+
+       .admin-navbar-brand {
+           font-size: 1.5rem;
+           color: #fff;
+       }
+
+       .admin-content {
+           padding: 20px;
+       }
+
+       .admin-main {
+           background-color: #f4f4f4;
+           min-height: 500px;
+           padding: 20px;
+           margin-top: 20px;
+       }
+
+       .user-table {
+           width: 100%;
+           margin-top: 20px;
+       }
+
+       .user-table th,
+       .user-table td {
+           padding: 8px;
+           text-align: left;
+           border-bottom: 1px solid #ddd;
+       }
+
+       .admin-btn {
+           margin-right: 10px;
+       }
+
+       .add-user-form {
+           margin-top: 20px;
+       }
+   </style>
+</head>
+<body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-black">
+                <a class="navbar-brand" href="./INDEX.HTML">
+                    <img src="./img/logo.png" alt="Logo de Cycles Workshop">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./INDEX.HTML">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Mantención Mecánica</a>
+                                <a class="dropdown-item" href="#">Mantención de Suspensiones</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Otros Servicios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./NOSOTROS.HTML">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./CONTACTO.HTML">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./SERVICIOS.HTML" style="color: rgb(163, 0, 0);">AGENDAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ADMINISTRADOR.HTML">Iniciar sesion</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./CARRITO.HTML">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+<!-- Admin Panel -->
+<nav class="navbar admin-navbar">
+    <div class="container">
+        <span class="navbar-brand admin-navbar-brand">Panel de Administrador - Gestionar Usuarios</span>
+    </div>
+ </nav>
+ 
+ <!-- Admin Content -->
+ <div class="container admin-content">
+    <div class="admin-main">
+        <h2>Gestionar Usuarios</h2>
+        <hr>
+        <h3>Usuarios Actuales:</h3>
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Correo Electrónico</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Javier Cerna</td>
+                    <td>usuario1@example.com</td>
+                    <td>
+                        <button class="btn btn-primary admin-btn">Editar</button>
+                        <button class="btn btn-danger admin-btn">Eliminar</button>
+                    </td>
+                </tr>
+                <!-- Additional rows for more users -->
+                <tr>
+                    <td>2</td>
+                    <td>Ignacio Bello</td>
+                    <td>usuario1@example.com</td>
+                    <td>
+                        <button class="btn btn-primary admin-btn">Editar</button>
+                        <button class="btn btn-danger admin-btn">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3> </h3>
+        <h3>Agregar Nuevo Usuario:</h3>
+        <form class="add-user-form">
+            <div class="form-group">
+                <label for="newUsername">Nombre de Usuario:</label>
+                <input type="text" class="form-control" id="newUsername" placeholder="Ingrese el nombre de usuario">
+            </div>
+            <div class="form-group">
+                <label for="newEmail">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="newEmail" placeholder="Ingrese el correo electrónico">
+            </div>
+            <div class="form-group">
+                <label for="newPassword">Contraseña:</label>
+                <input type="password" class="form-control" id="newPassword" placeholder="Ingrese la contraseña">
+            </div>
+            <h1> </h1>
+            <button type="submit" class="btn btn-success admin-btn">Agregar Usuario</button>
+        </form>
+    </div>
+ </div>
+ 
+ <!-- Bootstrap Scripts -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ </body>
+ </html>

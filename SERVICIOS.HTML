@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ccycles | Servicio Técnico</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css'>
+
+    <style>
+        .card-img-top {
+            margin-bottom: 8px;
+        }
+    </style>
+    
+    <style>
+        .navbar-nav .nav-link {
+            color: white; /* Establece el color del texto en blanco */
+        }
+
+        .navbar {
+            padding-top: 5px; /* Espacio superior para que la imagen del logo sea más grande */
+            padding-bottom: 1px; /* Espacio inferior para que la imagen del logo sea más grande */
+        }
+
+        .navbar-brand img {
+            height: 40px; /* Tamaño de la imagen del logo */
+        }
+
+        .navbar-toggler {
+            margin-top: 20px; /* Ajuste de posición para el botón del navbar-toggler */
+        }
+
+        .navbar-brand {
+            margin-left: 60px; /* Mueve la imagen del logo hacia la derecha */
+        }
+    </style>
+     <style>
+        #scrollToTopBtn {
+            display: none; /* Oculta el botón por defecto */
+            position: fixed; /* Fija el botón en la ventana del navegador */
+            bottom: 20px; /* Alinea el botón en la esquina inferior derecha */
+            right: 20px;
+            z-index: 99; /* Asegura que el botón esté encima de otros elementos */
+            border: none; /* Elimina el borde del botón */
+            outline: none; /* Elimina el contorno del botón al hacer clic */
+            background-color: #535353; /* Color de fondo del botón */
+            color: white; /* Color del icono */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            padding: 15px; /* Espaciado interno del botón */
+            border-radius: 50%; /* Hace que el botón sea redondeado */
+        }
+    
+        #scrollToTopBtn:hover {
+            background-color: #636363; /* Cambia el color de fondo al pasar el cursor */
+        }
+    </style>
+    
+    <script>
+        // Muestra u oculta el botón dependiendo del desplazamiento de la página
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+    
+        // Hace que la página se desplace suavemente hacia arriba cuando se hace clic en el botón
+        function topFunction() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        }
+    </script>
+</head>
+<button onclick="topFunction()" id="scrollToTopBtn" title="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+</button>
+</head>
+<body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-black">
+                <a class="navbar-brand" href="./INDEX.HTML">
+                    <img src="./img/logo.png" alt="Logo de Cycles Workshop">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./INDEX.HTML">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./SERVICIOS.HTML#seccion-mecanica">Mantención Mecánica</a>
+                                <a class="dropdown-item" href="./SERVICIOS.HTML#seccion-suspensiones">Mantención de Suspensiones</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./SERVICIOS.HTML#seccion-otrosservicios">Otros Servicios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./NOSOTROS.HTML">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./CONTACTO.HTML">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./SERVICIOS.HTML" style="color: rgb(163, 0, 0);">AGENDAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./INICIO_SESION.HTML">Iniciar sesion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./CARRITO.HTML">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+        
+        <div class="container mt-5">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col">
+                    <h1>Servicio Técnico Profesional</h1>
+                    <h4>Tenemos las mejores opciones para realizar diagnóstico, mantención y reparación de tu bicicleta. Elige tu paquete para cotizar y agendar.</h4>
+                </div>
+            </div>
+
+
+            <section id="seccion-mecanica">
+              <div class="container mt-5">
+                <div class="row justify-content-center text-center mb-4">
+                    <div class="col">
+                        <h1> </h1>
+                        <h1> </h1>
+                        <h1> </h1>
+                        <h2>Servicios de Mecanica</h2>
+                        <h5>En esta seccion encontraras tienes servicios de Mecanica General</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card d-flex h-100">
+                            <img class="card-img-top" src="./img/Servicios/basic_bike.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Service</h5>
+                                <p class="card-text">
+                                    Regulación de frenos<br>
+                                    Regulación de transmisión<br>
+                                    Lubricación de cadena<br>
+                                    Chequeo completo de bicicleta<br>
+                                </p>
+                                <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <!-- Repite este bloque de código para cada servicio -->
+                
+                    
+                    <div class="col-md-4">
+                        <div class="card d-flex h-100">
+                            <img class="card-img-top" src="./img/Servicios/general_bike.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">General Service</h5>
+                                <p class="card-text"> 
+                                    Regulación de frenos<br>
+                                    Regulación de transmisión<br>
+                                    Lubricación de cadena<br>
+                                    Centrado y alineación de llantas<br>
+                                    Lavado de bicicleta<br>
+                                    Chequeo completo de bicicleta<br>
+                                </p>
+                                <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Inserta el texto "Mantención Mecánica" después de cada tercer bloque de servicio -->
+                    <div class="col-md-4">
+                        <div class="card d-flex h-100">
+                            <img class="card-img-top" src="./img/Servicios/premium_bike.png" alt="Card image cap">
+                            <div class="card-body"> 
+                                <h5 class="card-title">Premium Service</h5>
+                                <p class="card-text">
+                                    Desarmado full de bicicleta<br>
+                                    Chequeo de rodamientos<br>
+                                    Lavado Premium de todos los componentes<br>
+                                    Engrase de todos sus componentes y Links<br>
+                                    Regulación Full de bicicleta<br>
+                                    Chequeo completo de bicicleta<br>
+                                    Este es el servicio más solicitado
+                                </p>
+                                <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <section id="seccion-suspensiones">
+                        <div class="container mt-5">
+                          <div class="row justify-content-center text-center mb-4">
+                              <div class="col">
+                                  <h2>Servicios de Suspensiones</h2>
+                                  <h5>En esta seccion encontraras tienes servicios Hidráulicos</h5>
+                              </div>
+                          </div>
+                          <!DOCTYPE html>
+                          <html lang="en">
+                          <head>
+                              <meta charset="UTF-8">
+                              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                              <title>Tus Servicios</title>
+                              <style>
+                                  .card-body {
+                                      display: flex;
+                                      flex-direction: column;
+                                      justify-content: space-between;
+                                      height: 100%;
+                                  }
+                          
+                                  .btn-agendar {
+                                      align-self: center;
+                                  }
+                              </style>
+                          </head>
+                          <body>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card d-flex h-100">
+                                        <img class="card-img-top" src="./img/Servicios/basic_service_fork.png" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Basic Service Horquilla</h5>
+                                            <p class="card-text">
+                                                Apertura de parte baja de horquilla<br>
+                                                Limpieza y cambio de fluidos y armado<br>
+                                            </p>
+                                            <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Repite este bloque de código para cada servicio -->
+                            
+                                <div class="col-md-4">
+                                    <div class="card d-flex h-100">
+                                        <img class="card-img-top" src="./img/Servicios/full_service_fork.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Full Service Horquilla</h5>
+                                            <p class="card-text">
+                                                Desarme completo de suspension<br>
+                                                chequeo de sistemas<br>
+                                                Limpieza intensiva<br>
+                                                Purgado con Vacuometro ANDREANI<br>
+                                                Armado de suspension<br>
+                                                Chequeo por DynoHand <br>
+                                            </p>
+                                            <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Inserta el texto "Mantención Mecánica" después de cada tercer bloque de servicio -->
+                            
+                                <div class="col-md-4">
+                                    <div class="card d-flex h-100">
+                                        <img class="card-img-top" src="./img/Servicios/basic_shock.png" alt="Card image cap">
+                                        <div class="card-body"> 
+                                            <h5 class="card-title">Basic Service Shock</h5>
+                                            <p class="card-text">
+                                                Apertura de cámara de aire<br>
+                                                Limpieza, cambio de fluidos y armado<br>
+                                            </p>
+                                            <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Inserta el texto "Mantención Mecánica" después de cada tercer bloque de servicio -->
+                            
+                                <div class="col-md-4">
+                                    <div class="card d-flex h-100">
+                                        <img class="card-img-top" src="./img/Servicios/full_service_shock.png" alt="Card image cap">
+                                        <div class="card-body"> 
+                                            <h5 class="card-title">Full Service Shock</h5>
+                                            <p class="card-text">
+                                                Desarme completo de suspension<br>
+                                                Chequeo de sistemas<br>
+                                                Limpieza intensiva<br>
+                                                Purgado con Vacuometro ANDREANI<br>
+                                                Armado de suspension<br>
+                                                Chequeo por DynoHand<br>
+                                            </p>
+                                            <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </body>
+                          </html>
+                          
+  
+
+            <section id="seccion-otrosservicios">
+            <div class="container mt-5">
+              <div class="row justify-content-center text-center mb-4">
+                  <div class="col">
+                      <h2>Otros Servicios</h2>
+                      <h5>En esta seccion encontraras tienes servicios varios y reparaciones</h5>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                    <div class="card d-flex h-100">
+                        <img class="card-img-top" src="./img/Servicios/purgado_frenos.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Purgado de Frenos</h5>
+                            <p class="card-text">
+                                Regulación de frenos<br>
+                                Limpieza Pistones<br>
+                                Centrado de Pistones<br>
+                            </p>
+                            <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Repite este bloque de código para cada servicio -->
+            
+                <div class="col-md-4">
+                    <div class="card d-flex h-100">
+                        <img class="card-img-top" src="./img/Servicios/centrado_enrayado.png " alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Centrado Enrayado</h5>
+                            <p class="card-text">
+                                Centrado con Reloj Comparador  y Software de Precision<br>
+                                Enrayado con fijador y Tensiometro<br>
+                            </p>
+                            <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Inserta el texto "Mantención Mecánica" después de cada tercer bloque de servicio -->
+            
+                <div class="col-md-4">
+                    <div class="card d-flex h-100">
+                        <img class="card-img-top" src="./img/Servicios/rodamientos_maza.png" alt="Card image cap">
+                        <div class="card-body"> 
+                            <h5 class="card-title">Cambio Rodamientos Maza</h5>
+                            <p class="card-text">
+                                Desarme completo de maza<br>
+                                Limpieza Body<br>
+                                Revision Cassete<br>
+                                Recambio Rodamientos<br>
+                                Inspeccion y limpieza con Ultrasonido<br>
+                            </p>
+                            <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Inserta el texto "Mantención Mecánica" después de cada tercer bloque de servicio -->
+            
+                <div class="col-md-4">
+                    <div class="card d-flex h-100">
+                        <img class="card-img-top" src="./img/Servicios/rodamientos_cuadro.png" alt="Card image cap">
+                        <div class="card-body"> 
+                            <h5 class="card-title">Cambio Rodamientos Cuadro</h5>
+                            <p class="card-text">
+                                Desarme Completo de cuadro<br>
+                                Recambio de Rodamientos<br>
+                                Limpieza partes por ultrasonido<br>
+                                Engrase y lubricacion partes moviles<br>
+                                Inspeccion General<br>
+                                Torque segun fabrica<br>
+                                Herramienta Analoga y Digital<br>
+                            </p>
+                            <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Inserta el texto "Mantención Mecánica" después de cada tercer bloque de servicio -->
+            
+                <div class="col-md-4">
+                    <div class="card d-flex h-100">
+                        <img class="card-img-top" src="./img/Servicios/reparacion.jpg" alt="Card image cap">
+                        <div class="card-body"> 
+                            <h5 class="card-title">Otros Servicios</h5>
+                            <p class="card-text">
+                                Reparaciones<br>
+                                Cambio Bomba Frenos<br>
+                                Recambio bushing<br>
+                                Seteo Suspensiones<br>
+                                entre otros<br>
+                            </p>
+                            <a href="./AGENDAR.HTML" class="btn btn-primary btn-block">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                  
+                   
+                    <!-- Repite este patrón de bloques de servicio y texto "Mantención Mecánica" para los siguientes servicios -->,
+            
+                </div>
+            </div>
+            
+      </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<footer class="text-center text-lg-start text-white" style="background-color: #333333">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4" style="background-color: #262627">
+        <!-- Left -->
+        <div class="me-5">
+            <span>Tienda de Ciclismo Profesional</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="HTTPS://WWW.FACEBOOK.COM/CCYCLES" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="HTTPS://WWW.INSTAGRAM.COM/CCYCLES_CL" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/ccycles_cl" class="text-white me-4">
+                <i class="fab fa-youtube"></i> <!-- Icono de YouTube -->
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="container-fluid">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold">Ccycles Workshop</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p>
+                        CCYCLES COMPROMETIDO CON LOS DEPORTISTAS
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Products</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p>
+                        <a href="#!" class="text-white">Repuestos</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Insumos</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Componentes</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Compras</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p>
+                        <a href="#!" class="text-white">Mi Cuenta</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Registrarme</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Agendar</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Servicios</a>
+                    </p>
+
+
+                    
+                </div>
+
+
+                
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Contacto</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p><i class="fas fa-home mr-3"></i> Los Notros,1071, TOMÉ</p>
+                    <p><i class="fas fa-envelope mr-3"></i> ccyclesoficial@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +56945573755</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Javier Cerna - Ignacio Bello</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+

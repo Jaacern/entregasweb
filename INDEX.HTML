@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ccycles | Servicio Técnico</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css'>
+
+    <style>
+        .card-img-top {
+            margin-bottom: 8px;
+        }
+    </style>
+    
+    <style>
+        
+        .navbar-nav .nav-link {
+            color: white; /* Establece el color del texto en blanco */
+        }
+
+        .navbar {
+            padding-top: 5px; /* Espacio superior para que la imagen del logo sea más grande */
+            padding-bottom: 1px; /* Espacio inferior para que la imagen del logo sea más grande */
+        }
+
+        .navbar-brand img {
+            height: 40px; /* Tamaño de la imagen del logo */
+        }
+
+        .navbar-toggler {
+            margin-top: 20px; /* Ajuste de posición para el botón del navbar-toggler */
+        }
+
+        .navbar-brand {
+            margin-left: 60px; /* Mueve la imagen del logo hacia la derecha */
+        }
+
+        
+    </style>
+    <style>
+        #scrollToTopBtn {
+            display: none; /* Oculta el botón por defecto */
+            position: fixed; /* Fija el botón en la ventana del navegador */
+            bottom: 20px; /* Alinea el botón en la esquina inferior derecha */
+            right: 20px;
+            z-index: 99; /* Asegura que el botón esté encima de otros elementos */
+            border: none; /* Elimina el borde del botón */
+            outline: none; /* Elimina el contorno del botón al hacer clic */
+            background-color: #535353; /* Color de fondo del botón */
+            color: white; /* Color del icono */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            padding: 15px; /* Espaciado interno del botón */
+            border-radius: 50%; /* Hace que el botón sea redondeado */
+        }
+    
+        #scrollToTopBtn:hover {
+            background-color: #636363; /* Cambia el color de fondo al pasar el cursor */
+        }
+    </style>
+    
+    <script>
+        // Muestra u oculta el botón dependiendo del desplazamiento de la página
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+    
+        // Hace que la página se desplace suavemente hacia arriba cuando se hace clic en el botón
+        function topFunction() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        }
+    </script>
+</head>
+<button onclick="topFunction()" id="scrollToTopBtn" title="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-black">
+                <a class="navbar-brand" href="./INDEX.HTML">
+                    <img src="./img/logo.png" alt="Logo de Cycles Workshop">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./INDEX.HTML">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./SERVICIOS.HTML#seccion-mecanica">Mantención Mecánica</a>
+                                <a class="dropdown-item" href="./SERVICIOS.HTML#seccion-suspensiones">Mantención de Suspensiones</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="./SERVICIOS.HTML#seccion-otrosservicios">Otros Servicios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./NOSOTROS.HTML">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./CONTACTO.HTML">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            
+                            <a class="nav-link" href="./SERVICIOS.HTML" style="color: rgb(163, 0, 0);">AGENDAR</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./INICIO_SESION.HTML">Iniciar sesion</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./CARRITO.HTML">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/foto1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Deja tu bicicleta en las mejores manos!</h5>
+                    <h5> </h5>
+                    <h5> </h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/foto2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Seguridad y Confianza</h5>
+                    <p>Utilizamos herramientas especificas para cada servicio y personal capacitado</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/foto3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Haz de tus salidas una experiencia unica!</h5>
+                    <p>Manten tu bicicleta en optimas condiciones y configurada solo para ti </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    
+        <section class="py-5">
+            <div class="container mt-">
+                <div class="row justify-content-center text-center mb-4">
+                    <div class="col-lg-8 col-xxl-7">
+        
+                        <h2 class="display-5 fw-bold">¿Cómo funciona el proceso de servicio</h2>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="text-center position-relative">
+                            <div class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center" style="width:120px;height:120px;">
+                                <svg class="bi bi-basket text-white" fill="light" height="40" viewbox="0 0 16 16" width="40" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"></path></svg>
+                            </div>
+                            <h4 class="mt-3 fs-5">Cotiza y agenda</h4>
+                            <div class="arrow-icon position-absolute d-none d-lg-block" style="top:50px; right:-25px">
+                                <svg class="bi bi-arrow-right" fill="light" height="30" viewbox="0 0 16 16" width="30" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill-rule="evenodd"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center position-relative">
+                            <div class="step-icon mx-auto border rounded-circle d-flex align-items-center justify-content-center" style="width: 120px;height: 120px;">
+                                <svg class="bi bi-envelope-exclamation text-white" fill="light" height="50" viewbox="0 0 16 16" width="50" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5m1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139zM8 9.057 9.598 6.5H6.402zM4.937 9.5a2 2 0 0 0-.487-.877l-.548.877zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53z"></path>></svg>
+                            </div>
+                            <h4 class="mt-3 fs-5">Traenos tu bicicleta</h4>
+                            <div class="bi bi-bicycle d-none d-lg-block position-absolute" style="top:50px; right:-25px">
+                                <svg class="bi bi-bicycle" fill="currentColor" height="30" viewbox="0 0 16 16" width="30" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill-rule="evenodd"></path></svg>
+                            </div>
+        
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center position-relative">
+                            <div class="step-icon mx-auto bg- border rounded-circle d-flex align-items-center justify-content-center" style="width: 120px;height: 120px;">
+                                <svg class="bi bi-truck text-white" fill="light" height="35" viewbox="0 0 16 16" width="35" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"></path></svg>
+                            </div>
+                            <h4 class="mt-3 fs-5">Proceso de Mantenimiento</h4>
+                            <div class="arrow-icon d-none d-lg-block position-absolute" style="top:50px; right:-25px">
+                                <svg class="bi bi-arrow-right" fill="light" height="30" viewbox="0 0 16 16" width="30" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" fill-rule="evenodd"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="text-center position-relative">
+                            <div class="step-icon mx-auto  border rounded-circle d-flex align-items-center justify-content-center" style="width: 120px;height: 120px;">
+        
+                                <svg class="bi bi-bicycle text-light" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="light" class="bi bi-bicycle" viewBox="0 0 16 16">
+                                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                  </svg>
+                            </div>
+                            <h4 class="mt-3 fs-5">Entrega</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+        <div class="container mt-5">
+            <div class="row justify-content-center text-center mb-4">
+                <div class="col">
+                    <h1>Servicio Técnico Profesional</h1>
+                    <h4>Tenemos las mejores opciones para realizar diagnóstico, mantención y reparación de tu bicicleta. Elige tu paquete para cotizar y agendar.</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/servicios_mecanicos.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicios Mecánicos</h5>
+                            <p class="card-text"></p>
+                            <a href="./SERVICIOS.HTML#seccion-mecanica" class="btn btn-primary">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/servicios_hidraulicos.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicios Hidráulicos</h5>
+                            <p class="card-text"></p>
+                            <a href="./SERVICIOS.HTML#seccion-suspensiones" class="btn btn-primary">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/otros_servicios.png" alt="Card image cap">
+                        <div class="card-body"> 
+                            <h5 class="card-title">Otros Servicios</h5>
+                            <p class="card-text"></p>
+                            <a href="./SERVICIOS.HTML#seccion-otrosservicios" class="btn btn-primary">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+<footer class="text-center text-lg-start text-white" style="background-color: #333333">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4" style="background-color: #262627">
+        <!-- Left -->
+        <div class="me-5">
+            <span>Tienda de Ciclismo Profesional</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="HTTPS://WWW.FACEBOOK.COM/CCYCLES" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="HTTPS://WWW.INSTAGRAM.COM/CCYCLES_CL" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/ccycles_cl" class="text-white me-4">
+                <i class="fab fa-youtube"></i> <!-- Icono de YouTube -->
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="container-fluid">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold">Ccycles Workshop</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p>
+                        CCYCLES COMPROMETIDO CON LOS DEPORTISTAS
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Products</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p>
+                        <a href="#!" class="text-white">Repuestos</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Insumos</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Componentes</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Compras</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p>
+                        <a href="#!" class="text-white">Mi Cuenta</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Registrarme</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Agendar</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Servicios</a>
+                    </p>
+
+
+                    
+                </div>
+
+
+                
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Contacto</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p><i class="fas fa-home mr-3"></i> Los Notros,1071, TOMÉ</p>
+                    <p><i class="fas fa-envelope mr-3"></i> ccyclesoficial@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +56945573755</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Javier Cerna - Ignacio Bello</a>
+    </div>
+    <!-- Copyright -->
+</footer>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ccycles | Servicio Técnico</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css'>
+
+    <style>
+        .card-img-top {
+            margin-bottom: 8px;
+        }
+    </style>
+    
+    <style>
+        .navbar-nav .nav-link {
+            color: white; /* Establece el color del texto en blanco */
+        }
+
+        .navbar {
+            padding-top: 5px; /* Espacio superior para que la imagen del logo sea más grande */
+            padding-bottom: 1px; /* Espacio inferior para que la imagen del logo sea más grande */
+        }
+
+        .navbar-brand img {
+            height: 40px; /* Tamaño de la imagen del logo */
+        }
+
+        .navbar-toggler {
+            margin-top: 20px; /* Ajuste de posición para el botón del navbar-toggler */
+        }
+
+        .navbar-brand {
+            margin-left: 60px; /* Mueve la imagen del logo hacia la derecha */
+        }
+    </style>
+    <style>
+        #scrollToTopBtn {
+            display: none; /* Oculta el botón por defecto */
+            position: fixed; /* Fija el botón en la ventana del navegador */
+            bottom: 20px; /* Alinea el botón en la esquina inferior derecha */
+            right: 20px;
+            z-index: 99; /* Asegura que el botón esté encima de otros elementos */
+            border: none; /* Elimina el borde del botón */
+            outline: none; /* Elimina el contorno del botón al hacer clic */
+            background-color: #535353; /* Color de fondo del botón */
+            color: white; /* Color del icono */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+            padding: 15px; /* Espaciado interno del botón */
+            border-radius: 50%; /* Hace que el botón sea redondeado */
+        }
+    
+        #scrollToTopBtn:hover {
+            background-color: #636363; /* Cambia el color de fondo al pasar el cursor */
+        }
+    </style>
+    
+    <script>
+        // Muestra u oculta el botón dependiendo del desplazamiento de la página
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+    
+        // Hace que la página se desplace suavemente hacia arriba cuando se hace clic en el botón
+        function topFunction() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        }
+    </script>
+</head>
+<button onclick="topFunction()" id="scrollToTopBtn" title="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+</button>
+</head>
+<body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-black">
+                <a class="navbar-brand" href="./INDEX.HTML">
+                    <img src="./img/logo.png" alt="Logo de Cycles Workshop">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./INDEX.HTML">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Mantención Mecánica</a>
+                                <a class="dropdown-item" href="#">Mantención de Suspensiones</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Otros Servicios</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./NOSOTROS.HTML">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./CONTACTO.HTML">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./SERVICIOS.HTML" style="color: rgb(163, 0, 0);">AGENDAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./INICIO_SESION.HTML">Iniciar sesion</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./CARRITO.HTML">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Columna para el formulario de contacto -->
+            <div class="col-md-6">
+                <div class="card bg-opacity">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Formulario de Contacto</h2>
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Columna para la información de contacto -->
+            <div class="col-md-6">
+                <div class="card bg-opacity">
+                    <div class="card-body">
+                        <h4 class="text-center">Información de Contacto</h4>
+                        <p class="contact-email"><strong>Email:</strong> ccyclesoficial@gmail.com</p>
+                        <p class="contact-phone"><strong>Teléfono:</strong> +56945573755</p>
+                        <p class="contact-address"><strong>Dirección:</strong> Los Notros 1071, Tomé</p>
+                        <div class="text-center">
+                            <img src="./img/fondo1.PNG" class="img-fluid" alt="Información de Contacto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="mapa" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-4">Ubicación</h2>
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3201.2357413808054!2d-72.95211462344791!3d-36.64477896813959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96684fe19ec86bcb%3A0xb1d1ec2b9f8ed16a!2sTaller%20Bicicletas%20Ccycles!5e0!3m2!1ses!2scl!4v1712802814072!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <div style="height: 50px;"></div>
+<footer class="text-center text-lg-start text-white" style="background-color: #333333">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-between p-4" style="background-color: #262627">
+        <!-- Left -->
+        <div class="me-5">
+            <span>Tienda de Ciclismo Profesional</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="HTTPS://WWW.FACEBOOK.COM/CCYCLES" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="HTTPS://WWW.INSTAGRAM.COM/CCYCLES_CL" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/ccycles_cl" class="text-white me-4">
+                <i class="fab fa-youtube"></i> <!-- Icono de YouTube -->
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="container-fluid">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold">Ccycles Workshop</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p>
+                        CCYCLES COMPROMETIDO CON LOS DEPORTISTAS
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Products</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p>
+                        <a href="#!" class="text-white">Repuestos</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Insumos</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Componentes</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Compras</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p>
+                        <a href="#!" class="text-white">Mi Cuenta</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Registrarme</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Agendar</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Servicios</a>
+                    </p>
+
+
+                    
+                </div>
+
+
+                
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Contacto</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
+                    <p><i class="fas fa-home mr-3"></i> Los Notros,1071, TOMÉ</p>
+                    <p><i class="fas fa-envelope mr-3"></i> ccyclesoficial@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +56945573755</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Javier Cerna - Ignacio Bello</a>
+    </div>
+    <!-- Copyright -->
+</footer>
